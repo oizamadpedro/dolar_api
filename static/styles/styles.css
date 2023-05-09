@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@100;300;900&display=swap');
+*{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: pink;
+    color:black;
+}
+.page-content{
+    width: 100vw;
+    height: 100vh;
+}
+.top{
+    margin-left: 530px;
+    padding: 150px;
+}
+.bottom{
+    margin-left:580px;
+    display: flex;
+}
+.bottom > input{
+    border-radius:10px;
+    height: 25px;
+    margin-left:3px;
+    margin-right: 3px;
+}
+.bottom > img{
+    max-width:35px;
+    border-radius:10px;
+}
+
+.bottom > button{
+    border-radius:10px;
+    background-color: lightgrey;
+    margin-left: 10px;
+}
+
+.inverter{
+    margin-top: 8px;
+    background-color: transparent;
+}
+
+.cotacao{
+    margin-top:300px;
+}
+
+.cotacao > h1{
+    font-size: 20px;
+}

@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="page-content">
+        <div class="top">
+            <h1>Dólar para Real</h1>
+        </div>
+        <form method="POST" class="bottom" action="{% url 'cotacao_real' %}">
+            {% csrf_token %}
+            <img src="{% static '/imgs/eua.png'%}">
+            <input type="text" name="dolar">
+            <img src="{% static '/imgs/brasil.png'%}">
+            <input type="text" name="real" value="{{ real }}" readonly>
+            <button type="submit">Converter</button>
+        </form>
+        <div class="bottom">
+            <a href="{% url 'cotacao_dolar' %}" class="inverter">
+                <button type="submit" class="inverter">Inverter</button>
+            </a>
+        </div>
+        <div class="cotacao">
+            <h1>U$> R$ {{ cotacao }}</h1>
+        </div>
+    </div>
+{% endblock %}
